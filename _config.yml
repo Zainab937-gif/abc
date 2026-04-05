@@ -1,0 +1,63 @@
+title: Zainab Aamir
+name: Zainab Aamir
+description: Computer Engineering Student | Builder | Problem Solver
+url: ""
+baseurl: ""
+
+minimal_mistakes_skin: dark
+
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+author:
+  name: Zainab Aamir
+  bio: Computer Engineering student passionate about embedded systems, C++, and building things that actually work.
+  location: Pakistan
+  email: zainab@email.com
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/zainab
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/zainab
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+paginate: 5
+paginate_path: /page:num/
+
+timezone: Asia/Karachi
